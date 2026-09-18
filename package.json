@@ -7,6 +7,7 @@
     "dev": "concurrently -k -n API,WEB -c magenta,cyan \"node server/index.js\" \"vite --host 0.0.0.0\"",
     "server": "node server/index.js",
     "db:init": "node server/initDb.js",
+    "db:supabase": "node server/initSupabase.js",
     "start": "node server/index.js",
     "build": "vite build",
     "lint": "oxlint",

@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     watch: {
-      ignored: ['**/dist.zip'],
+      ignored: ['**/dist/**', '**/dist.zip'],
     },
     proxy: {
       '/sns-api': {
@@ -24,5 +24,11 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+    fs: {
+      allow: [
+        '.',
+        'C:/Users/senth/OneDrive/Desktop/templates'
+      ]
+    }
   },
 })
